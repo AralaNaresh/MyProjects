@@ -1,14 +1,15 @@
 package com.infosys.springUtil;
 
 public class Employee {
+
 	
-	private Number id;
-	private String name;
-	private Double salary;
-	public Number getId() {
+	 private Integer id;
+	 private String name;
+	 private  Double salary;
+	public Integer getId() {
 		return id;
 	}
-	public void setId(Number id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -27,8 +28,6 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
-	
-	
-	
-
+	 
+	 
 }
