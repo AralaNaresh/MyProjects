@@ -1,26 +1,22 @@
 package com.infosys.Service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-import com.infosys.Dao.employeeDao;
+import com.infosys.Dao.EmployeeDao;
 import com.infosys.entity.Employee;
 
 @Configuration
 public class EmployeeService {
 	
-	public double cal(Employee employee) {
-		
-	//ninna denilo salary logic rayamannaru today display chesesadu 
-		
-		Double salary = employee.getSalary();
-		
-		employeeDao dao = new employeeDao();
-		
-		dao.save(employee);
-		
-		return salary;
-		
-		
+	@Autowired
+	private EmployeeDao employeeDao;
+	
+		public double calTax(Employee employee) {
+			
+			Double salary = employee.getSalary();
+			return salary;
+			
 	}
 
 }

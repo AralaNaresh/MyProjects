@@ -28,7 +28,7 @@ public class App {
 
 		AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext(com.infosys.Util.MocUtil.class);
 		EmployeeService service = container.getBean(EmployeeService.class);
-		double val = service.cal(employee);
+		double val = service.calTax(employee);
 		
 	System.out.println(val);
 		container.close();

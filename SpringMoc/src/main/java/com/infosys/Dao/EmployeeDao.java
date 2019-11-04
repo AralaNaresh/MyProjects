@@ -7,15 +7,15 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import com.infosys.entity.Employee;
 
 @Configuration
-public class employeeDao {
+public class EmployeeDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public Integer save(Employee employee) {
 
-		int data = jdbcTemplate.update("insert into employee values(?,?,?)", employee.getEno(), employee.getName(),
+		int count = jdbcTemplate.update("insert into employee values(?,?,?)", employee.getEno(), employee.getName(),
 				employee.getSalary());
-		return data;
+		return count;
 	}
 
 }
