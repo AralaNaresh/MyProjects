@@ -1,9 +1,8 @@
 package com.infosys.service;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.infosys.Dao.EmployeeDAO;
 import com.infosys.entity.Employee;
@@ -18,5 +17,4 @@ public class EmployeeService {
 	public void send(Employee employee) {
 		employeeDAO.Save(employee);
 	}
-
 }

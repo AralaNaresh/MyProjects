@@ -8,10 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.stereotype.Component;
 
 import com.infosys.entity.Employee;
 
-@Configuration
+@Component
 public class LocalSessionFactroyUtil {
 
 	@Autowired
@@ -28,7 +29,7 @@ public class LocalSessionFactroyUtil {
 		return sessionFactory;
 
 	}
-	
+
 	private Properties properties() {
 		Properties properties = new Properties();
 		properties.setProperty("hibernate.show-sql", "true");

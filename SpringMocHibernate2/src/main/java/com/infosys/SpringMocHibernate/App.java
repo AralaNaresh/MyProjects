@@ -11,10 +11,10 @@ public class App
 	public static void main( String[] args )
     {
     	 
-    	 Employee employee = new Employee(3,"reethik",30000d);  	
+    	 Employee employee = new Employee(6,"rama",40000d);  	
     	 AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext(MocUtil.class);
     	   EmployeeService employeeService = container.getBean(EmployeeService.class);
-    	   employeeService.send(employee);
+    	    employeeService.send(employee);
     	  
     	 container.close();
     	 

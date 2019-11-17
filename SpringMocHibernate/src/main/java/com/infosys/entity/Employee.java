@@ -1,12 +1,12 @@
 package com.infosys.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.IdClass;
+import javax.persistence.Id;
 
 @Entity
 public class Employee {
 
-	@javax.persistence.Id
+	@Id
 	private Integer ID;
 	private String NAME;
 	private Double SALARY;

@@ -10,18 +10,16 @@ import com.infosys.entity.Employee;
 
 @Repository
 public class EmployeeDAO extends HibernateDaoSupport {
-	
+
 	@Autowired
 	public EmployeeDAO(SessionFactory sessionFactory) {
 		this.setSessionFactory(sessionFactory);
 	}
 
-	public Integer Save(Employee employee) {
-
-		 return Integer.class.cast(getHibernateTemplate().save(employee));
-		
-	
+	public void Save(Employee employee) {
+		getHibernateTemplate().save(employee);
 
 	}
+	
 
 }
