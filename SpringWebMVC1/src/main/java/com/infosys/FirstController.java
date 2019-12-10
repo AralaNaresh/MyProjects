@@ -6,11 +6,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class FirstController {
-	
-	@RequestMapping(path ="/one",method = RequestMethod.GET)
+
+	@RequestMapping(path = "/one")
 	public void methodOne() {
-		System.out.println("  server hello");
+		System.out.println("  server hello nana");
+
 		
 	}
+	
 
 }

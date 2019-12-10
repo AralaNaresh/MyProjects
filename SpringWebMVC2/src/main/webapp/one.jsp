@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-       Browser HEllo  NAresh
+ <form action="emp" method ="post"><br>
+  Eno:<input type="text" name="eno"><br>
+  name:<input type ="text"  name="name"><br>
+  <button>save</button>
+ 
+ </form>
 </body>
 </html>
